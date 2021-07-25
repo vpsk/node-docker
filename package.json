@@ -1,0 +1,20 @@
+{
+  "name": "docker-node",
+  "version": "1.0.0",
+  "description": "simple node application with docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js",
+    "build": "esbuild --bundle src/index.js --outfile=build/app.js --minify --platform=node"
+  },
+  "author": "virendra singh",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.12.15",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
